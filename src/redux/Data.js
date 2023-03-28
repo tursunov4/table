@@ -8,7 +8,7 @@ export const Data =(state=initialState, action)=>{
    }
    case 'remove' :{
    
-    return {users:state.users.splice(action.payload,1)}
+    return {users:state.users.filter((item) => item.id !== action.payload)}
    }
    
     default:{

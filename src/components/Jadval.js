@@ -27,7 +27,7 @@ function Jadval() {
               <td>{item.name}</td>
               <td>{item.lastname}</td>
               <td>{item.age}</td>
-              <td><button onClick={()=> removeUser(index)} className='btn btn-danger px-3 py-1'>Remove</button></td>
+              <td><button onClick={()=> removeUser(item.id)} className='btn btn-danger px-3 py-1'>Remove</button></td>
             </tr>
           ))
         }
